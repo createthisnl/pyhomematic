@@ -340,7 +340,7 @@ class IPThermostatWall230V(HMThermostat, IPAreaThermostatNoBattery, HelperRssiDe
 
 class IPThermostatWall2(HMThermostat, IPAreaThermostat, HelperRssiDevice, HelperLowBatIP):
     """
-    HmIP-WTH, HmIP-WTH-2, HmIP-STHD, HmIP-STH
+    HmIP-WTH, HmIP-WTH-1, HmIP-WTH-2, HmIP-STHD, HmIP-STH
     ClimateControl-Wall Thermostat that measures temperature and allows to set a target temperature or use some automatic mode.
     """
     def __init__(self, device_description, proxy, resolveparamsets=False):
@@ -475,6 +475,8 @@ DEVICETYPES = {
     "Thermostat AA GB": IPThermostat,
     "HmIP-STHD": IPThermostatWall2,
     "HmIP-STH": IPThermostatWall2,
+    "HmIP-WTH-1": IPThermostatWall2,
+    "HMIP-WTH-1": IPThermostatWall2,
     "HmIP-WTH-2": IPThermostatWall2,
     "HMIP-WTH-2": IPThermostatWall2,
     "HmIP-WTH-B": IPThermostatWall2,
